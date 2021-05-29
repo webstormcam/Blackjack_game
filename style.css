@@ -1,3 +1,17 @@
+body{
+text-align: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: #fff;
+background-image: url('img/casino_green.jpg');
+font-size: 20px;
+}
+
+
 h1{
     color: goldenrod;
+}
+
+
+#message-el{
+font-style: italic;
 }
