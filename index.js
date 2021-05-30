@@ -13,7 +13,8 @@ let cardsEL=document.querySelector('#cards-el')
 
 
 function getRandomCard(){
-    return 5
+    let randomNumber=Math.floor(Math.random()*13)+1
+    return randomNumber
 }
 
 function renderGame(){
