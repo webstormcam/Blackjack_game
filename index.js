@@ -1,5 +1,5 @@
-let firstCard = 10
-let secondCard = 4
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
 let cards=[firstCard,secondCard]//array-ordered list of items
 let sum = firstCard + secondCard 
 
@@ -42,7 +42,7 @@ function startGame(){
 
 
 function newCard(){
-    let card=6
+    let card=getRandomCard()
     sum+=card
     cards.push(card)
     renderGame()
