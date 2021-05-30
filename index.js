@@ -14,7 +14,17 @@ let cardsEL=document.querySelector('#cards-el')
 
 function getRandomCard(){
     let randomNumber=Math.floor(Math.random()*13)+1
-    return randomNumber
+    if (randomNumber===1){
+        return 11
+    } else if (randomNumber===11){
+        return 10
+    } else if(randomNumber===12){
+        return 10
+    } else if(randomNumber===13){
+       return 10
+    } else{
+        return randomNumber
+    }
 }
 
 function renderGame(){
