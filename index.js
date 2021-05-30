@@ -10,6 +10,12 @@ let messageEl=document.getElementById('message-el')
 let sumEl=document.querySelector('#sum-el')
 let cardsEL=document.querySelector('#cards-el')
 
+
+
+function getRandomCard(){
+    return 5
+}
+
 function renderGame(){
     if (sum<=20){
         message='Do you want to draw a new card?'
@@ -23,7 +29,10 @@ function renderGame(){
     
     messageEl.textContent=message
     sumEl.textContent='Sum: '+sum
-    cardsEL.textContent='Cards: '+cards[0]+' '+cards[1]
+    cardsEL.textContent='Cards: '
+    for (let count=0; count<cards.length;count++){
+        cardsEL.textContent+=' '+cards[count]
+    }
 }
 
 
